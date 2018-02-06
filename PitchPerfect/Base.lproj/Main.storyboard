@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="برای شروع ضبط لمس کنید" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxP-v7-7TV">
-                                <rect key="frame" x="50" y="225" width="254" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEr-Lj-3C3">
                                 <rect key="frame" x="95" y="130" width="152" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.21866449390822407" blue="0.11583010461866583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,25 +30,38 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0x-8H-eh9">
-                                <rect key="frame" x="95" y="282" width="152" height="39"/>
+                                <rect key="frame" x="95" y="267" width="152" height="39"/>
                                 <color key="backgroundColor" red="1" green="0.56733849140000003" blue="0.13224981180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="توقف ضبط"/>
+                                <state key="normal" title="توقف ضبط">
+                                    <color key="titleColor" red="0.88655013743726285" green="1" blue="0.22005872410052951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmL-BO-4Za"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="برای شروع ضبط لمس کنید" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxP-v7-7TV">
+                                <rect key="frame" x="50" y="211" width="254" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.9241617995248903" blue="0.64194972421584795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98774409275358632" blue="0.98199685834537265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nEr-Lj-3C3" secondAttribute="trailing" constant="73" id="46i-35-GhK"/>
+                            <constraint firstItem="t0x-8H-eh9" firstAttribute="centerX" secondItem="nEr-Lj-3C3" secondAttribute="centerX" id="Cib-Ad-1NW"/>
+                            <constraint firstItem="t0x-8H-eh9" firstAttribute="top" secondItem="qxP-v7-7TV" secondAttribute="bottom" constant="20" id="Fsj-KM-s2r"/>
                             <constraint firstItem="t0x-8H-eh9" firstAttribute="top" secondItem="qxP-v7-7TV" secondAttribute="bottom" constant="36.5" id="GkD-t2-2BX"/>
+                            <constraint firstItem="t0x-8H-eh9" firstAttribute="top" secondItem="nEr-Lj-3C3" secondAttribute="bottom" constant="93" id="NFr-Gu-0JN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qxP-v7-7TV" secondAttribute="trailing" constant="16" id="QfA-oE-x0j"/>
                             <constraint firstItem="nEr-Lj-3C3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="RBa-Ee-dLM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t0x-8H-eh9" secondAttribute="trailing" constant="73" id="UE4-Cu-PN7"/>
                             <constraint firstItem="nEr-Lj-3C3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="cEX-rh-Enj"/>
                             <constraint firstItem="qxP-v7-7TV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cYA-Gv-HD0"/>
                             <constraint firstItem="t0x-8H-eh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="eEH-NN-3lS"/>
+                            <constraint firstItem="qxP-v7-7TV" firstAttribute="top" secondItem="nEr-Lj-3C3" secondAttribute="bottom" constant="20" id="fmb-2a-TVc"/>
+                            <constraint firstItem="qxP-v7-7TV" firstAttribute="top" secondItem="nEr-Lj-3C3" secondAttribute="bottom" constant="20" id="j6R-SA-rF9"/>
                             <constraint firstItem="qxP-v7-7TV" firstAttribute="top" secondItem="nEr-Lj-3C3" secondAttribute="bottom" constant="51" id="snH-13-Gm4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
