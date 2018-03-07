@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sound View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,6 @@
                                         </state>
                                         <connections>
                                             <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmL-BO-4Za"/>
-                                            <segue destination="QNb-2r-HKP" kind="show" id="rQc-v6-VFP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -77,16 +76,17 @@
                         <outlet property="recordButton" destination="nEr-Lj-3C3" id="MK3-Ae-bTa"/>
                         <outlet property="recordingLabel" destination="qxP-v7-7TV" id="8sQ-hB-90v"/>
                         <outlet property="stopRecordingButton" destination="t0x-8H-eh9" id="dsi-JI-MIv"/>
+                        <segue destination="QNb-2r-HKP" kind="show" identifier="stopRecording" id="qaU-lr-lY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="926" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sound View Controller-->
         <scene sceneID="8UG-ZN-gLQ">
             <objects>
-                <viewController id="QNb-2r-HKP" sceneMemberID="viewController">
+                <viewController id="QNb-2r-HKP" customClass="PlaySoundViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h0q-iL-XbY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
