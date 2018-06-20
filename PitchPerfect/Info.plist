@@ -42,6 +42,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>&quot;This app uses microphone to record audio for educational purposes&quot;</string>
+	<string>&quot;This is my first iOS app&quot;</string>
 </dict>
 </plist>
