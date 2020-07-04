@@ -29,9 +29,21 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
 
+    func configureUI(isRecording: Bool) {
+        switch(isRecording){
+        case true:
+            stopRecordingButton.isEnabled = true
+            recordButton.isEnabled = false
+            recordingLabel.text = "Recording..."
+        case false:
+            stopRecordingButton.isEnabled = false
+            recordButton.isEnabled = true
+            recordingLabel.text = "Tap to Record"
+        }
+        
+    }
     @IBAction func recordAudio(_ sender: Any) {
-        recordingLabel.text = "Recording..."
-        recordButton.isEnabled = false
+        configureUI(isRecording: true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let fileName = "my_voice.wav"
@@ -41,8 +53,10 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         print(filePath?.absoluteString as Any)
         
         let session = AVAudioSession.sharedInstance()
-        try! session.setCategory(convertFromAVAudioSessionCategory(AVAudioSession.Category.playAndRecord), with: .defaultToSpeaker)
+//        try! session.setCategory(convertFromAVAudioSessionCategory(AVAudioSession.Category.playAndRecord), with: .defaultToSpeaker)
         
+       try! session.setCategory(.playAndRecord, mode: .default, options: [])
+   
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
@@ -54,9 +68,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func  stopRecording(_ sender: Any) {
-        stopRecordingButton.isEnabled = false
-        recordButton.isEnabled = true
-        recordingLabel.text = "Tap to Record"
+        configureUI(isRecording: true)
         //Stop recording
         audioRecorder.stop();
         let audioSession = AVAudioSession.sharedInstance()

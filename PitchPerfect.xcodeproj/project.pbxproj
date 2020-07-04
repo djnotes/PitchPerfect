@@ -15,6 +15,7 @@
 		7FFBCFD620139E0F0039BDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFBCFD420139E0F0039BDB6 /* LaunchScreen.storyboard */; };
 		7FFBCFE120139E0F0039BDB6 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBCFE020139E0F0039BDB6 /* PitchPerfectTests.swift */; };
 		7FFBCFEC20139E0F0039BDB6 /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBCFEB20139E0F0039BDB6 /* PitchPerfectUITests.swift */; };
+		E0EAC2A824B0C08C007E146F /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAC2A724B0C08C007E146F /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7FFBCFE720139E0F0039BDB6 /* PitchPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFBCFEB20139E0F0039BDB6 /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		7FFBCFED20139E0F0039BDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EAC2A724B0C08C007E146F /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7FFBCFD420139E0F0039BDB6 /* LaunchScreen.storyboard */,
 				7FFBCFD720139E0F0039BDB6 /* Info.plist */,
 				7F334730205078BD00935F52 /* PlaySoundViewController.swift */,
+				E0EAC2A724B0C08C007E146F /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -191,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Udacity;
 				TargetAttributes = {
 					7FFBCFC720139E0F0039BDB6 = {
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFBCFCE20139E0F0039BDB6 /* RecordSoundViewController.swift in Sources */,
+				E0EAC2A824B0C08C007E146F /* PlaySoundsViewController+Audio.swift in Sources */,
 				7F334731205078BD00935F52 /* PlaySoundViewController.swift in Sources */,
 				7FFBCFCC20139E0F0039BDB6 /* AppDelegate.swift in Sources */,
 			);
@@ -335,6 +339,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -342,6 +347,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -393,6 +399,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -400,6 +407,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
